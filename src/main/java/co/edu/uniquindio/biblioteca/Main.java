@@ -119,7 +119,6 @@ public class Main {
             }
         } else {
             System.out.println("No existe el cliente o la edad no coincide " + nombre);
-
         }
     }
 
