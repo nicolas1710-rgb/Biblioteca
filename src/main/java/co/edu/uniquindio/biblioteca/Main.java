@@ -65,7 +65,7 @@ public class Main {
         String email= sc.nextLine();
         System.out.println("Ingrese la edad del cliente:");
         String edad= sc.nextLine();
-        bibliotecaPrincipal.agregarCliente(nombre,id,telefono,email,edad);
+        bibliotecaPrincipal.agregarCliente(nombre,id,telefono,email,edad,true);
     }
     public static void crearEmpleado(Scanner sc,Biblioteca bibliotecaPrincipal){
         System.out.println("Ingrese el nombre del empleado:");
@@ -139,7 +139,8 @@ public class Main {
                     "129427918",
                     "3024974686",
                     "pepe@uqvirtual.edu.co",
-                    "18"
+                    "18",
+                    false
             );
         return bibliotecaPrincipal;
         }

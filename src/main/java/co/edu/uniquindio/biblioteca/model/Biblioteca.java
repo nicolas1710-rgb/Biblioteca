@@ -19,10 +19,12 @@ public class Biblioteca {
         this.nombre=nombre;
     }
 
-    public void agregarCliente(String nombre, String id,String telefono, String email, String edad){
+    public void agregarCliente(String nombre, String id,String telefono, String email, String edad, boolean mostrarMensaje){
         Cliente cliente=new Cliente(nombre,id,telefono,email,edad);
         ListaClientes.add(cliente);
-        System.out.println("cliente agregado correctamente");
+        if(mostrarMensaje==true) {
+            System.out.println("cliente agregado correctamente");
+        }
     }
     public void agregarEmpleado(String nombre, String id,String telefono, String email, String edad){
         Empleado empleado=new Empleado(nombre,id,telefono,email,edad);
