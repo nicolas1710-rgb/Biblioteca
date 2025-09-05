@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Biblioteca bibliotecaPrincipal=new Biblioteca("Biblioteca principal");
+        Biblioteca bibliotecaPrincipal=inicializarDatos();
         int opcion;
 
         do{
@@ -118,7 +118,7 @@ public class Main {
                 System.out.println("Edad del cliente valida "+cliente.getEdad());
             }
         } else {
-            System.out.println("No existe el cliente o la edad no coincide " + nombre);
+            System.out.println("No existe el cliente o la edad no coincide (nombre ingresado):" + nombre);
         }
     }
 
@@ -131,5 +131,16 @@ public class Main {
             }else{
                 System.out.print("No existe el libro con el nombre: " + nombre);
 }
+        }
+        public static Biblioteca inicializarDatos (){
+        Biblioteca bibliotecaPrincipal= new Biblioteca("UQ");
+            bibliotecaPrincipal.agregarCliente(
+                    "pepe",
+                    "129427918",
+                    "3024974686",
+                    "pepe@uqvirtual.edu.co",
+                    "18"
+            );
+        return bibliotecaPrincipal;
         }
     }
